@@ -1,0 +1,18 @@
+﻿
+Objetivo
+
+O objetivo desse texto é explicar como implementar uma API REST para controlar a vacinação da população brasileira.
+
+A API a ser desenvolvida deve conter os seguintes endpoints capazes de realizar:
+
+    • O Cadastro de usuário com os campos nome, e-mail, cpf e data de nascimento, sendo todos obrigatórios. E os campos e-mail e cpf devem ser únicos na tabela que armazena os usuários;
+
+    • O Cadastro de aplicação de vacina com os campos data da aplicação, o nome da vacina aplicada e uma referência para o usuário que recebeu a vacina, nesse caso a tabela que armazena as aplicações de vacina irá conter uma chave estrangeira para a tabela que armazena os usuários; 
+
+Essa API será desenvolvida com tecnologias da plataforma Java, tais como Spring Boot, JPA e Hibernate.
+
+Implementação
+
+Vamos começar a implementação pela camada model. Ela é responsável por representar as informações que serão persistidas no banco, no nosso caso o cadastro de usuários e de aplicações de vacinas.
+
+As classes dessa camada serão POJOs contendo anotações da JPA.  
